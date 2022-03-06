@@ -1,0 +1,126 @@
+/* 
+   ##  SCSS Document 
+   ##  Name Sidebar
+*/
+/* 
+   ## Document name: Variables
+*/
+.sidebar {
+  left: 0;
+  flex-grow: 1;
+  z-index: 999;
+  width: 13.75rem;
+  flex-basis: 100%;
+  position: absolute;
+  top: 5rem;
+  justify-content: center;
+  transition: 0.5s ease-in;
+  display: flex !important;
+  height: calc(100vh - 5rem);
+  transform: translatex(-100%);
+  background-color: #ffffff;
+  color: #000000 !important;
+  align-items: center !important;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sidebar .category-list {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+  padding: 0px !important;
+  list-style: none !important;
+  color: #000000 !important;
+  justify-content: center !important;
+}
+
+.sidebar .category-list li.category-item {
+  margin: .25rem 0 !important;
+}
+
+.sidebar .category-list li.category-item .category-btn {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  border: unset;
+  transition: opacity 1.5s;
+  justify-items: flex-start;
+  font-size: 1rem !important;
+  justify-content: flex-start;
+  appearance: none !important;
+  font-weight: 500 !important;
+  color: #000000 !important;
+  background-color: transparent;
+  border-bottom: 1px solid #000000;
+}
+
+.sidebar .category-list li.category-item .category-btn i {
+  margin-left: auto !important;
+}
+
+.sidebar .category-list li.category-item .category-btn.active {
+  font-weight: 600;
+  color: #d7a700 !important;
+  border: 0.5px solid #d7a700;
+  background-color: #000000 !important;
+}
+
+.sidebar .category-list li.category-item .subcat-list {
+  margin-top: .5rem;
+  padding: 0px !important;
+  display: none !important;
+  list-style: none !important;
+  justify-content: center !important;
+}
+
+.sidebar .category-list li.category-item .subcat-list li.subcat-item {
+  margin: .25rem 0 !important;
+}
+
+.sidebar .category-list li.category-item .subcat-list li.subcat-item button.subcat-btn {
+  width: 100%;
+  display: flex;
+  border: unset;
+  font-weight: 400;
+  padding: .125rem .5rem;
+  transition: opacity 0.7s;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  appearance: none !important;
+  color: #000000 !important;
+  background-color: transparent;
+}
+
+.sidebar .category-list li.category-item .subcat-list.active {
+  display: block !important;
+}
+
+.sidebar.collapsing {
+  height: auto;
+  transition: left 0.5s ease;
+  left: -100%;
+}
+
+.sidebar.show {
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  padding-left: 2.5vw;
+  transition: 0.5s ease-in;
+  transform: translatex(0%) !important;
+}
+
+.sidebar.show .category-list .category-item .category-link {
+  transition: opacity 1.5s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767.98px) {
+  .sidebar {
+    left: 0;
+    padding-left: 5vw !important;
+    max-width: 11rem !important;
+  }
+}
