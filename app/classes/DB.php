@@ -4,7 +4,7 @@ class DB {
     
     protected $DB_ServerName="db";
     protected $DB_User = "root";
-    protected $DB_Pass = "ZeroDegree247"; // password
+    protected $DB_Pass = "password"; // password
     protected $DB_Name = "online_store";
     protected $fields = array();
     protected $_query;
