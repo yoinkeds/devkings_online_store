@@ -1,14 +1,5 @@
 <?php
-/* 
-    ##  PHP / HTML      Document
-    ##  Document title: index
-    ##  Author:         Tim Lopes
-    ##  Author email    timlopes.work@gmail.com
-    ##  Website:        www.timlopes.eu
-    ##  Designed for:   Group project
-    ##  Project:        Web Development 
-    ##  Dated:          February 2022
-*/
+
 /*
 function loadPage($page){
     require_once $page.'.php';
